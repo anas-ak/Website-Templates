@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nas's Food-ventures</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {font-family: 'Karma';}
+        .w3-bar-block, .w3-bar-item {padding: 20px;}
+    </style>
+</head>
+<body>
+    
+    <!--Sidebar (hidden by default)-->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none; z-index:2; width:40%; min-width:300px" id="mySideBar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+        <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    </nav>
+
+    <!--Top Menu-->
+    <div class="w3-top">
+        <div class="w3-white w3-xlarge" style="max-width:1200px; margin: auto">
+            <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">&#x2630;</div>
+            <div class="w3-right w3-padding-16">Mail</div>
+            <div class="w3-center w3-padding-16">My Food</div>
+        </div>
+    </div>
+
+    <!--Page Content-->
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px; margin-top:100px;">
+        
+        <!--First Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="food"> 
+                <div class="w3-quarter">
+                    <img src="sandwich.jpg" alt="sandwich" style="width: 270px; height: 200px; object-fit: cover;">
+                    <h3>The Bun Kebab, A Real Karachi Classic</h3>
+                    <p>Just some random text (for now). We're going to dedicate this website to Karachi food.</p>
+                </div>
+
+                <div class="w3-quarter">
+                    <img src="broast.jpg" alt="broast" style="width: 270px; height: 200px; object-fit: cover">
+                    <h3>Chicken Broast - Mind-blowing Fried Chicken</h3>
+                    <p>Once again, some random text (for now). We're going to dedicate this website to food recipes so that you can bring Karachi home with you.</p>
+                </div>
+
+                <div class="w3-quarter">
+                    <img src="meetha.jpg" alt="meetha" style="width: 270px; height: 200px; object-fit: cover">
+                    <h3>Sweet Meats Galore</h3>
+                    <p>From Laddu to Chum Chum and everything in between - Currently just filler text, but soon. We'll put up content. Watch this space.</p>
+                </div>
+
+                <div class="w3-quarter">
+                    <img src="kashmiri-chai.jpg" alt="kashmiri" style="width: 270px; height: 200px; object-fit: cover">
+                    <h3>Kashmiri Chai to warm up your soul</h3>
+                    <p>Nothing quite like the month of January, the height of wedding season and cups of warm Kashmiri Chai.</p>
+                </div>
+        </div>
+
+        <!--Second Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-quarter">
+                <img src="tikka.jpg" alt="tikka" style="width: 270px; height: 200px; object-fit: cover">
+                <h3>All I Need Is Barbecue</h3>
+                <p>What we're known for is marinating for hours and then quickly barbequing meat 6in fat. To perfection.</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="fish.jpg" alt="fish" stlye="width: 270px; height: 200px; object-fit: cover">
+                <h3>Salmon for your skin</h3>
+                <p>If we're gonna talk about Karach, we're gonna talk about seafood. For sure.</p>
+            </div>
+            
+            <div class="w3-quarter">
+                <img src="paratha-roll.jpg" alt="roll" style="width: 270px; height: 200px; object-fit: cover">
+                <h3>Street Food</h3>
+                <p>No matter where you go, you'll never be far from street food. We're going to look at what's on offer in every nook, crook and alleyway.</p>
+            </div>
+
+            <div class="w3-quarter">
+                <img src="croissant.jpg" alt="croissant" style="width: 270px; height: 200px; object-fit: cover">
+                <h3>High Street Dining</h3>
+                <p>Finally, a section for all you proliteriat snobs. Offered here are the classiest restaurants and reviews of what they serve. You wealthy SOBs.</p>
+            </div>
+        </div>
+
+        <!--Pagination-->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a href="#" class="w3-bar-item w3-button w3-hover-black"><<</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">>></a>
+            </div>
+        </div>
+
+        <hr id="about">
+
+        <!--About Section-->
+        <div class="w3-container w3-padding-32 w3-center">
+            <h3>About Me, The Foodie</h3> <br>
+            <img src="chef.jpg" alt="chef" class="w3-image" style="display: block; margin: auto; width: 800px; height:550px;">
+            <div class="w3-padding-32">
+                <h4><b>Hi! I'm Anas. Nice to meet you.</b></h4>
+                <h6><i>With Passion For Real, Good Food</i></h6>
+                <p style="float:left">Just me, myself and I, exploring the universe of the unknown. I'm a web dev. This is a passion project. So, let's keep expectations low, eh? I'm doing this to slowly build a place where I can dump all that I learn and my recipes, and at some point, put it on the Web. So there. Now you know. <br>
+                The next step is to build the afore-mentioned webpages, whilst adding beauty. I think I'm going to call this website something simple, like - 'khana peena' - which translates to 'eat and drink'.
+                And then, we'll use Bulma CSS to make the website looking nice and pretty. Hooray!</p>
+                
+            </div>
+        </div>
+        <hr>
+
+        <!--Footer-->
+        <footer class="w3-row-padding w3-padding-32">
+            <div class="w3-third">
+                <h3>Footer</h3>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                <p>Powered by  <a href="#" target="_blank">w3.css</a></p>
+            </div>
+
+            <div class="w3-third">
+                <h3>Blog Posts</h3>
+                <ul class="w3-ul w3-hoverable">
+                    <li class="w3-padding-16">
+                        <img src="home-cooking.jpg" alt="home-cooking" class="w3-left w3-margin-right" style="width:90px;">
+                        <span class="w3-large">Cooking At Home</span><br>
+                        <span>Recipes and much much more</span>
+                    </li>
+
+                    <li class="w3-padding-16">
+                        <img src="health-tips.jpg" alt="health" class="w3-left w3-margin-right" style="width:90px">
+                        <span class="w3-large">Spices, Teas and Herbs</span>
+                        <span>All of Amma's health tips in one place</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-third w3-serif">
+                <h3>Popular Tags</h3>
+                <p>
+                    <span class="w3-tag w3-black w3-margin-bottom">Karachi</span>
+                    <span class="w3-tag w3-black w3-margin-bottom">Broast</span>
+                    <span class="w3-tag w3-black w3-margin-bottom">Rolls</span>
+                    <span class="w3-tag w3-black w3-margin-bottom">Bun Kebabs</span>
+                    <span class="w3-tag w3-black w3-margin-bottom">Tikka</span>
+                    <span class="w3-tag w3-black w3-margin-bottom">Biryani</span>
+                    <span class="w3-tag w3-black w3-margin-bottom">Nihari</span>
+                    <span class="w3-tag w3-black w3-margin-bottom">Gol Gappay</span>
+                    <span class="w3-tag w3-black w3-margin-bottom">Mirch</span>
+                    <span class="w3-tag w3-black w3-margin-bottom">Masala</span>
+                    <span class="w3-tag w3-black w3-margin-bottom">Chutney</span>
+                    <span class="w3-tag w3-black w3-margin-bottom">Fresh</span>
+                </p>
+            </div>
+        </footer>
+    <!--End Page Content-->    
+    </div>
+
+    <script>
+
+        /*Script to open and close sidebar*/
+        function w3_open() {
+            document.getElementById('mySideBar').style.display = 'block';
+        }
+
+        function w3_close() {
+            document.getElementById('mySideBar').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

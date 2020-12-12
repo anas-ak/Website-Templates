@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../w3 (1).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
+    
+</head>
+<body>
+
+    
+
+    <!--Navigation-->
+    <nav class="w3-bar w3-black">
+        <a href="#home" class="w3-button w3-bar-item">Home</a>
+        <a href="#band" class="w3-button w3-bar-item">Band</a>
+        <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+        <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+    </nav>
+
+    <!--Slide Show-->
+    <section style="padding: 0 20px 0 20px; background-color: black;">
+        <img class="mySlides" src="img_band_1a.jpg" style="width:100%; height:520px;">
+        <img class="mySlides" src="img_band_1b.jpg" style="width:100%; height:520px;">
+        <img class="mySlides" src="img_band_1c.jpg" style="width:100%; height:520px;">
+        <img class="mySlides" src="img_band_1e.jpg" style="width:100%; height:520px;">
+        <img class="mySlides" src="img_band_1f.jpg" style="width:100%; height:520px;">
+        <img class="mySlides" src="img_band_1g.jpg" style="width:100%; height:520px;">
+        <img class="mySlides" src="img_band_1h.jpg" style="width:100%; height:520px;">
+    </section>
+
+    <!--Band Description-->
+    <section class="w3-container w3-center w3-content" style="max-width:600px;">
+        <h2 class="w3-wide">JUNOON - THE BAND</h2>
+        <p class="w3-opacity"><i>We Love Music</i></p>
+        <p class="w3-justify">We have created a fictional website
+            for a real band. Junoon was formed in Lahore, Pakistan 
+            in 1990. It comprises of songwriter/guitarist Salman Ahmed, 
+            vocalist Ali Azmat and Canadian bassist Brian O'Connel.
+        </p>
+    </section>
+
+    <!--Band Members-->
+    <section class="w3-row-padding w3-center w3-light-grey">
+                <article class="w3-third">
+                    <p><strong>Salman Ahmed</strong></p>
+                    <img src="img_salman_ahmed.jpg" alt="salman-ahmed" 
+                    style="filter:grayscale(100%); width:75%">
+                    <p>The one that's eternally high.</p>
+                </article>
+      
+                <article class="w3-third">
+                    <p><strong>Ali Azmat</strong></p>
+                    <img src="img_ali_azmat.jpg" alt="ali-azmat"
+                    style="filter:grayscale(100%); width:90%">
+                    <p>The one that yells at you.</p>
+                </article>
+
+                <article>
+                    <p><strong> Brian O'Connell</strong></p>
+                    <img src="img_brian-oconell.jpg" alt="b-connell"
+                    style="filter:grayscale(100%); width:30%">
+                    <p>The one who does his job, quietly.</p>
+                </article>
+    </section>
+
+    <!--Footer-->
+    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-flickr"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <p class="w3-medium">
+            Powered by: <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+        </p>
+    </footer>
+
+    <script>
+        /*Automatic slideshow - change image every 5s*/
+        var myIndex = 0;
+        carousel();
+
+        function carousel(){
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+
+            for(i = 0; i<x.length; i++) {
+                x[i].style.display = "none";
+            }
+
+            myIndex++;
+
+            if(myIndex > x.length) {
+                myIndex = 1;
+            }
+            
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+</body>
+</html>
