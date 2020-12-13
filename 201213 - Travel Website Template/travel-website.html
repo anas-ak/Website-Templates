@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website Template</title>
+    <link rel="stylesheet" href="w3 (1).css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: 'Raleway', Arial, Helvetica, sans-serif;
+        }
+
+        .myLink { display: none; }
+    </style>
+</head>
+<body class="w3-light-grey">
+    
+    <!-- NAVIGATION BAR -->
+    <div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+        <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red">
+            <b>
+                <i class="fa fa-map-marker w3-margin-right"></i>SmoothFlights
+            </b>
+        </a>
+        <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey">
+            <span><i class="fa fa-plane"></i></span>
+        </a>
+    <!-- END NAVIGATION BAR -->
+    </div>
+
+    <!-- HEADER -->
+    <header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+        <img src="img_main_photo.jpg" alt="mainPhoto" class="w3-image" width="1500" height="700">
+
+        <!-- MAIN CONTAINER -->
+        <div class="w3-display-middle" style="width: 65%;">
+
+            <!-- TAB CONTAINER -->
+            <div class="w3-bar w3-black">
+                <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');">
+                    <i class="fa fa-plane w3-margin-right"></i> Flight
+                </button>
+
+                <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');">
+                    <i class=" fa fa-bed w3-margin-right"></i> Hotel
+                </button>
+
+                <button class="w3-bar-item w3-button tablink" onclick="openLink(event,'Car');">
+                    <i class="fa fa-car w3-margin-right"></i> Rental
+                </button>
+            <!-- END TAB CONTAINER -->
+            </div>
+
+            <!-- FLIGHT TAB -->
+            <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
+                <h3>Travel the world with us</h3>
+                <div class="w3-row-padding" style="margin:0 -16px;">
+                    <div class="w3-half">
+                        <label>From</label>
+                        <input type="text" class="w3-input w3-border" placeholder="Departing from..">
+                    </div>
+
+                    <div class="w3-half">
+                        <label>To</label>
+                        <input type="text" class="w3-input w3-border" placeholder="Arriving at..">
+                    </div>
+                </div>
+
+                <p> 
+                    <button class="w3-button w3-dark-grey">
+                        Search and find dates
+                    </button>
+                </p>
+            <!-- END FLIGHT TAB-->
+            </div>
+
+            <!-- HOTEL TAB -->
+            <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
+                <h3>Find the best hotels</h3>
+                <p>Book a hotel with us and get the best fares and promotions.</p>
+                <p>We know hotels - we know comfort.</p>
+                <p>
+                    <button class="w3-button w3-dark-grey">
+                        Search Hotels
+                    </button>
+                </p>
+            <!-- END HOTEL TAB -->
+            </div>
+
+            <!-- RENTAL TAB -->
+            <div id="Car" class="w3-container w3-white w3-padding-16 myLink">
+                <h3>Best car rental in the world!</h3>
+                <p>
+                    <span class="w3-tag w3-deep-orange">DISCOUNT!</span>
+                        Special offer if you book today: 25% off anywhere in the world with SmoothFlights
+                </p>
+                <input type="text" class="w3-input w3-border" placeholder="Pick-up Point">
+                <p>
+                    <button class="w3-button w3-dark-grey">Search Availability
+                    </button>
+                </p>
+            <!-- END RENTAL TAB -->
+            </div>
+        <!-- END MAIN CONTAINER -->
+        </div>
+    <!-- END HEADER -->
+    </header>
+
+    <!-- PAGE CONTENT -->
+    <div class="w3-content" style="max-width:1100px">
+
+        <!-- GOOD OFFERS -->
+        <div class="w3-container w3-margin-top">
+            <h3>Good Offers Right Now</h3>
+            <h6>Up to <strong>50%</strong> discount.</h6>
+        <!-- END GOOD OFFERS -->
+        </div>
+
+        <div class="w3-row-padding w3-text-white w3-large">
+            
+            <div class="w3-half w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="img_cterre.jpg" alt="Cinque Terre" style="width:100%">
+                    <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
+                </div>
+            </div>
+
+            <div class="w3-half">
+                <div class="w3-row-padding" style="margin: 0 -16px">
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <img src="image_singapore.jpg" alt="Singapore" style="width:100%; height: 190px;">
+                            <span class="w3-display-bottomleft w3-padding">Singapore</span>
+                        </div>
+                    </div>
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <img src="img_bangkok.jpg" alt="Bangkok" style="width:100%; height: 190px; object-fit: cover;">
+                            <span class="w3-display-bottomleft w3-padding">Bangkok</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-row-padding" style="margin: 0 -16px">
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <img src="image_sydney.jpg" alt="Sydney" style="width:100%; height: 150px">
+                            <span class="w3-display-bottomleft w3-padding">Sydney</span>
+                        </div>
+                    </div>
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <img src="image_paris.jpg" alt="Paris" style="width:100%; height: 150px">
+                            <span class="w3-display-bottomleft w3-padding">Paris</span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            
+            <div class="w3-half w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="img_new_york.jpg" alt="New York" style="width:100%">
+                    <span class="w3-display-bottomleft w3-padding">New York</span>
+                </div>
+            </div>
+
+            <div class="w3-half">
+                <div class="w3-row-padding" style="margin: 0 -16px">
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <img src="img_beijing.jpg" alt="Beijing" style="width:100%; height: 160px">
+                    <span class="w3-display-bottomleft w3-padding">Beijing</span>
+                        </div>
+                    </div>
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <img src="img_seoul.jpg" alt="Seoul" style="width:100%; height: 160px">
+                            <span class="w3-display-bottomleft w3-padding">Seoul</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-row-padding" style="margin: 0 -16px">
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <img src="img_toronto.jpg" alt="Toronto" style="width:100%; height: 180px">
+                            <span class="w3-display-bottomleft w3-padding">Toronto</span>
+                        </div>
+                    </div>
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <img src="image_london.jpg" alt="London" style="width:100%; height: 180px">
+                            <span class="w3-display-bottomleft w3-padding">London</span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <!-- EXPLORE NATURE -->
+        <div class="w3-container">
+            <h3>Explore Nature</h3>
+            <p>Travel with us and see nature at its finest.</p>
+        <!-- END EXPLORE NATURE -->
+        </div>
+
+        <div class="w3-row-padding">
+         <div class="w3-half w3-margin-bottom">
+            <img src="img_ocean.jpg" alt="Norway" style="width:100%">
+            <div class="w3-container w3-white">
+                <h3>West Coast, Norway</h3>
+                <p class="w3-opacity">Roundtrip from $79</p>
+                <p>Lalalala go drown in the ocean, you bitches! Fuck the whole lot of you.</p>
+                <button class="w3-button w3-margin-bottom">Buy Tickets</button>
+            </div>
+         </div>
+        
+         <div class="w3-half w3-margin-bottom">
+            <img src="img_mountains.jpg" alt="Austria" style="width:100%">
+            <div class="w3-container w3-white">
+                <h3>Mountains, Austria</h3>
+                <p class="w3-opacity">Roundtrip from $39</p>
+                <p>Lalalala go get lost, you bitches! Fuck the whole lot of you.</p>
+                <button class="w3-button w3-margin-bottom">Buy Tickets</button>
+            </div>
+         </div>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="w3-container">
+         <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
+            <h2>Get the best offers first!</h2>
+            <p>Join our newsletter</p>
+            <label>E-mail</label>
+            <input type="text" class="w3-input w3-border" placeholder="Your E-mail address">
+            <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+         </div>
+        <!-- END NEWSLETTER -->
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="w3-container">
+            <h2>Contact</h2>
+            <p>Let us book your next trip!</p>
+            <i class="fa fa-map-marker" style="width:30px"></i> Karachi, Pakistan <br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +001234567 <br>
+            <i class="fa fa-envelope" style="width:30px"></i> E-mail: info@smoothflights.com <br>
+
+            <!-- BEGIN FORM -->
+            <form action="/action_page.php" target="_blank">
+                <p><input type="text" class="w3-input w3-padding-16 w3-border" placeholder="Name" required name="Name"></p>
+                <p><input type="text" class="w3-input w3-padding-16 w3-border" placeholder="E-mail" required name="Email"></p>
+                <p><input type="text" class="w3-input w3-padding-16 w3-border" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="w3-button w3-black w3-padding=large" type="submit">SEND MESSAGE</button>
+                </p>
+            <!-- END FORM -->
+            </form>
+        <!-- END CONTACT INFO -->
+        </div>
+    <!-- END PAGE CONTENT -->
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+        <h5>Find Us On</h5>
+        <div class="w3-xlarge w3-padding-16">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+
+    <!-- END FOOTER -->
+    </footer>
+    
+    <script>
+        //Tabs
+        function openLink(evt, linkName){
+            var i, x, tablinks;
+
+            x = document.getElementsByClassName('myLink');
+
+            for(i = 0; i < x.length; i++) {
+                x[i].style.display = 'none';
+            }
+            
+            tablinks = document.getElementsByClassName('tablink');
+
+            for(i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(' w3-red', "");
+            }
+
+            document.getElementById(linkName).style.display = 'block';
+            evt.currentTarget.className += ' w3-red';
+        }
+
+        //Click on the first tablink on load
+        document.getElementsByClassName('tablink')[0].click();
+    </script>
+</body>
+</html>
